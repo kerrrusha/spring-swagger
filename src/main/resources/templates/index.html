@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title th:text="${title}"></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="d-flex flex-column justify-content-center align-items-center vh-100">
+    <h1 class="display-4 mb-4" th:text="${title}"></h1>
+    <a class="btn btn-primary" th:href="@{/swagger-ui.html}">Go to Swagger</a>
+</div>
+</body>
+</html>
