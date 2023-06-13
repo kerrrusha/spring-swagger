@@ -1,7 +1,8 @@
 package com.kerrrusha.springswagger.service;
 
-import com.kerrrusha.springswagger.dto.PagedSortedDto;
-import com.kerrrusha.springswagger.model.Product;
+import com.kerrrusha.springswagger.dto.request.PagedSortedDto;
+import com.kerrrusha.springswagger.domain.Product;
+import org.springframework.data.domain.Page;
 
 import java.util.List;
 
@@ -15,7 +16,7 @@ public interface ProductService {
 
     Product update(Product newProduct);
 
-    List<Product> getAllPagedSorted(PagedSortedDto request);
+    Page<Product> getAllPagedSorted(PagedSortedDto request);
 
     List<Product> getAllByPriceBetween(Long priceFrom, Long priceTo);
 
